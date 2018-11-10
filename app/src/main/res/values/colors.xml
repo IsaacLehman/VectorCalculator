@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#40c4ff</color>
+    <color name="colorPrimaryDark">#1976d2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="off_white">#4f5b62</color>
+    <color name="grey">#b64f4f4f</color>
+    <color name="light_grey">#afafaf</color>
+    <color name="poppy_blue">#2247ff</color>
+    <color name="black">#000</color>
+
+    <color name="inputTXT">#000</color>
+    <color name="inputEditText">#000</color>
+
+    <color name="outputText">#000a12</color>
+    <color name="outputTextViewBackground">#ffffff</color>
+    <color name="outputBackground">#1976d2</color>
+    <color name="outputHeader">#000</color>
+    <color name="Hints">#c6263238</color>
+
+    <color name="BottomButtonRow">#40c4ff</color>
+
+
+    <color name="splashBackground">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+
+
+    <color name="calculatorBackground">#ffffff</color>
+    <color name="splash_Screen_background">#fff</color>
+    <color name="white_text">#fff</color>
+    <color name="button_color_center">#2196F3</color>
+    <color name="button_color_edge_gradient">#2196F3</color>
+    <color name="button_txt_color">#fff</color>
+    <color name="par_button_color">#2641ff</color>
+    <color name="home_background">#ffffff</color>
+    <color name="grey_text">#9fffffff</color>
+    <color name="hint_color">#aaffffff</color>
+    <color name="pop_up_calculator_background">#ffffff</color>
+    <color name="red">#c93133</color>
+    <color name="dark_gray">#585858</color>
+    <color name="light_gray">#acacac</color>
+    <color name="orange">#e66f19</color>
+</resources>

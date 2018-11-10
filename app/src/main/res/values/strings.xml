@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VectorCalculator</string>
+    <string name="input_hintI">\u00EE</string>
+    <string name="input_hintJ">\u0135</string>
+    <string name="input_hintK">\u006B\u0302</string>
+</resources>

@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text="Vector A:  &#10092;"
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/Vec_A_i_editTXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned|numberDecimal"
+            android:nextFocusRight="@id/Vec_A_j_editTXT"
+            android:textColor="@color/inputEditText"
+            android:textColorHint="@color/Hints"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text=","
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/Vec_A_j_editTXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned|numberDecimal"
+            android:nextFocusRight="@id/Vec_A_k_editTXT"
+            android:textColor="@color/inputEditText"
+            android:textColorHint="@color/Hints"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text=","
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/Vec_A_k_editTXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned|numberDecimal"
+            android:nextFocusDown="@id/Vec_B_i_editTXT"
+            android:textColor="@color/inputEditText"
+            android:textColorHint="@color/Hints"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text="&#10093;"
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text="Vector B:  &#10092;"
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/Vec_B_i_editTXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned|numberDecimal"
+            android:nextFocusRight="@id/Vec_B_j_editTXT"
+            android:textColor="@color/inputEditText"
+            android:textColorHint="@color/Hints"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text=","
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/Vec_B_j_editTXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="numberSigned|numberDecimal"
+            android:nextFocusRight="@id/Vec_B_k_editTXT"
+            android:textColor="@color/inputEditText"
+            android:textColorHint="@color/Hints"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text=","
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/Vec_B_k_editTXT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="numberSigned|numberDecimal"
+            android:textColor="@color/inputEditText"
+            android:textColorHint="@color/Hints"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="7dp"
+            android:text="&#10093;"
+            android:textColor="@color/inputTXT"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/Calculator_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@color/white"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp"
+            android:text="Calculator"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@color/Hints" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/CrossProduct_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="A x B"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/DotProduct_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="A · B"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/Vaddditon_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="A + B"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/Vsubtraction_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="A - B"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/ABline_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="Line A --> B"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/V_Magnitude_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="|A| &amp; |B|"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/AngleAB_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="&#x3f4; between A and B"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/UnitV_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="Unit Vector"
+                    android:textAllCaps="false" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Output Log"
+        android:textColor="@color/outputHeader"
+        android:textSize="35sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/Hints" />
+
+
+    <ScrollView
+        android:id="@+id/VScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/outputBackground"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <LinearLayout
+            android:id="@+id/outputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ClearV_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/BottomButtonRow"
+            android:padding="5dp"
+            android:text="Clear"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/ResetVInput_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/BottomButtonRow"
+            android:padding="5dp"
+            android:text="Reset Input"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
