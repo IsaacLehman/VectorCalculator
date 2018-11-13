@@ -20,6 +20,7 @@ public class Math2_0 {
         inputTextFromTextView = input.getText().toString();
         inputTextFromTextView += place;
         input.setText(inputTextFromTextView);
+
     }
 
     public void add_input_buttons(int place, TextView answer, TextView input) throws IOException {
@@ -105,6 +106,13 @@ public class Math2_0 {
 
     }
 
+    /**
+     * check if the arraylist still contains operators
+     *
+     * ToDo: change so if the first item is a (-) ignore so you can have a negative number
+     * @param toCheck
+     * @return
+     */
     private  boolean hasOperator (ArrayList<String> toCheck) {
         for (String current : toCheck) {
             if (hasMathOperator(current)) {
