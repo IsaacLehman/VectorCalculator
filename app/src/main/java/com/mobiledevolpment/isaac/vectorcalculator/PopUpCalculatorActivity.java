@@ -7,6 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.io.IOException;
 
 public class PopUpCalculatorActivity extends AppCompatActivity {
 
@@ -16,7 +19,8 @@ public class PopUpCalculatorActivity extends AppCompatActivity {
             one, two, three, equals, zero, decimal;
 
 
-    private Calculator_Math math;
+    //private Calculator_Math math;
+    private Math2_0 math;
 
 
     //Array of buttons and textViews
@@ -94,7 +98,7 @@ public class PopUpCalculatorActivity extends AppCompatActivity {
         //------------------------------------------------------------------------------------------
 
         //Instantiate math class.
-        math = new Calculator_Math();
+        math = new Math2_0();
 
         //------------------------------------------------------------------------------------------
 
@@ -126,7 +130,16 @@ public class PopUpCalculatorActivity extends AppCompatActivity {
                     Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                     vibe.vibrate(50);
 
-                    math.add_input_buttons(place, answer, input);
+                    try {
+                        math.add_input_buttons(place, answer, input);
+                    } catch (IOException e) {
+                        // show error message as a toast
+                        Toast.makeText(PopUpCalculatorActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    } catch (NumberFormatException e) {
+                        // show error message as a toast
+                        Toast.makeText(PopUpCalculatorActivity.this, "Check Input", Toast.LENGTH_SHORT).show();
+                    }
+
                 }
             });
         }
