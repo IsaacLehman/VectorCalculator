@@ -13,6 +13,8 @@ public class Math2_0 {
     private String inputTextFromTextView;
     private String lastItem;
 
+    private final String PLUS = "+", MINUS = "-", MULTIPLY = "x", DIVIDE = "";
+
     public Math2_0() {
 
     }
