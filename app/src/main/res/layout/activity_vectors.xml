@@ -250,6 +250,16 @@
                     android:textAllCaps="false" />
 
                 <Button
+                    android:id="@+id/Vprojection_button"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@color/white"
+                    android:text="A projected onto B"
+                    android:textAllCaps="false" />
+
+                <Button
                     android:id="@+id/ABline_button"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"

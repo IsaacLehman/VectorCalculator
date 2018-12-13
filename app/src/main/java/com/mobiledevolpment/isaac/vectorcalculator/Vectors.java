@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class Vectors extends AppCompatActivity {
 
     private EditText VecA_i_EditTXT, VecA_j_EditTXT, VecA_k_EditTXT, VecB_i_EditTXT, VecB_j_EditTXT, VecB_k_EditTXT;
-    private Button ClearButton, ResetButton, CrossButton, DotButton, AddButton, SubtractButton, LineButton, MagnitudeButton, AngleA_B, UnitVButton, CalculatorButton;
+    private Button ClearButton, ResetButton, CrossButton, DotButton, AddButton, SubtractButton, LineButton, MagnitudeButton, AngleA_B, UnitVButton, CalculatorButton, ProjectionButton;
     private ScrollView OutputScrollView;
     private LinearLayout outputLayout;
 
@@ -104,6 +104,7 @@ public class Vectors extends AppCompatActivity {
         AngleA_B = (Button) findViewById(R.id.AngleAB_button);
         UnitVButton = (Button) findViewById(R.id.UnitV_button);
         CalculatorButton = (Button) findViewById(R.id.Calculator_button);
+        ProjectionButton = (Button) findViewById(R.id.Vprojection_button);
 
         //------------------------------------------------------------------------------------------
 
@@ -256,6 +257,19 @@ public class Vectors extends AppCompatActivity {
                     Toast.makeText(Vectors.this, e.getMessage(),
                             Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        ProjectionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                initialize();
+
+                vecMeth.project_a_onto_b();
+
+                addButton("- " + outputLogCount + " -\n" + vecMeth.printAonBProjection() + "\n");
+
+                finalise();
             }
         });
 

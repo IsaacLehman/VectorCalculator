@@ -23,6 +23,7 @@ public class VectorMethods {
     public double[] unitVectorB = new double[3];
     public double[] vectorSum  = new double[3];
     public double[] vectordifference  = new double[3];
+    private double[] projectionVector = new double[3];
 
     public double aMagnitude;
     public double bMagnitude;
@@ -39,7 +40,23 @@ public class VectorMethods {
     public VectorMethods() {
     }
 
+    public void project_a_onto_b() {
+        computeVdotProduct();
+        computeMagnitude();
+        double scaler_dot_dividedBy_V_magSquared = dotProduct / Math.pow(vectorMagnitudeB, 2);
 
+        for (int i = 0; i < 3; i++) {
+            projectionVector[i] = scaler_dot_dividedBy_V_magSquared * bVector[i];
+        }
+    }
+
+    public String printAonBProjection() {
+        return String.format(Locale.US,"A on B = " + printVector(projectionVector) + "\n|A on B| = %.2f",magnitude(projectionVector));
+    }
+
+    public double magnitude(double[] vector) {
+        return Math.sqrt( Math.pow(vector[0], 2) + Math.pow(vector[1], 2) + Math.pow(vector[2], 2) );
+    }
 
     public void convertAngleToRadians() {
         angleBetweenR = angleBetweenD * ( PI / 180.0 );
